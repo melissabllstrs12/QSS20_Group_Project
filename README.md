@@ -5,7 +5,7 @@ Group Members:
 - Luis Ortiz Velasquez
 - Viviana Perez
 
-## Introduction
+# Introduction
 
 In 2018–2019, the United States imposed a series of tariffs on Chinese imports under Section 301, marking the beginning of a major trade conflict between the U.S. and China. These tariffs were justified as a way to:
 
@@ -25,7 +25,7 @@ We focus specifically on industries heavily affected by tariffs — particularly
 - Producer price responses
 
 
-## Research Question
+# Research Question
 
 **Our central research question is:**
 
@@ -37,7 +37,7 @@ We focus specifically on industries heavily affected by tariffs — particularly
 * Were these effects statistically significant?
 * Did industries facing greater tariff exposure experience higher producer prices?   
 
-## Data Sources 
+# Data Sources 
 
 ### Employment Data
 
@@ -84,7 +84,7 @@ We focus specifically on industries heavily affected by tariffs — particularly
 *This evaluates whether consumers and downstream firms bore the cost of protection.*
 
 
-## Results (Preliminary)
+# Results (Preliminary)
 
 ### Employment Effects
 - **Estimated employment increase in steel: ~12.5%**
@@ -94,7 +94,7 @@ We focus specifically on industries heavily affected by tariffs — particularly
 - Suggestive evidence of **employment gains**
 - **NOT** strong enough to conclusively attribute gains solely to tariffs
 
-## Price Effects
+# Price Effects
 
 **Existing Federal Reserve research suggests:**
 
@@ -117,7 +117,7 @@ Our project evaluates this mechanism at the industry level using PPI data.
   8. Conduct price pass-through analysis
 
 
-## Tools & Software
+# Tools & Software
 **All analysis is conducted in Python using:**
 - pandas – Data cleaning and merging
 - numpy – Variable construction
@@ -149,7 +149,7 @@ Our project evaluates this mechanism at the industry level using PPI data.
 
 is **critical** for evaluating current and future *tariff expansions*
 
-## References
+# References
 
 Autor, David H., David Dorn, and Gordon H. Hanson. 2013. “The China Syndrome: Local
 Labor Market Effects of Import Competition in the United States.” American Economic
