@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Cost–Benefit Analysis of U.S.–China Tariffs (2018–2019)
 Group Members:
 
@@ -74,6 +73,53 @@ We focus specifically on industries heavily affected by tariffs — particularly
 * Treated industry (steel) & Control industry (non-tariff-affected metal manufacturing)
 * Pre-tariff period (2015–2017) & Post-tariff period (2019)
 
+### Price Change Measurement
+
+We calculate the change in steel prices relative to a baseline period using the Producer Price Index (PPI):
+
+\[
+\Delta P_t = P_t - P_{baseline}
+\]
+
+Where:
+
+- \(P_t\) = steel producer price index at time \(t\)
+- \(P_{baseline}\) = baseline steel price index (2015)
+- \(\Delta P_t\) = change in steel prices relative to the baseline period
+
+
+### Steel Transaction Analysis
+
+To analyze purchasing behavior surrounding tariff implementation, we aggregate steel transaction quantities to the monthly level.
+
+\[
+Q_m = \sum_{i=1}^{n_m} q_i
+\]
+
+Where:
+
+- \(Q_m\) = total quantity of steel purchased in month \(m\)  
+- \(q_i\) = quantity purchased in transaction \(i\)  
+- \(n_m\) = number of transactions in month \(m\)
+
+This aggregation produces a time series of steel demand, allowing us to observe whether firms increased purchases prior to tariff implementation (potential stockpiling) and whether demand declined following price increases.
+
+
+### Estimated Cost Impact
+
+To approximate the economic burden of price increases on downstream purchasers, we combine price changes with steel transaction quantities:
+
+\[
+CostImpact_t = \Delta P_t \times Q_t
+\]
+
+Where:
+
+- \(\Delta P_t\) = change in steel price index
+- \(Q_t\) = total steel transaction quantity in period \(t\)
+
+This provides an approximate measure of how higher steel prices translate into increased costs for firms purchasing steel.
+
 * **Regression specification:**
   
 $$
@@ -112,7 +158,26 @@ $$
 - Suggestive evidence of **employment gains**
 - **NOT** strong enough to conclusively attribute gains solely to tariffs
 
-# Price Effects
+### Price Effects
+
+Steel producer prices increased following tariff implementation.
+
+Consistent with previous research, our results suggest:
+
+- Tariff costs were largely passed through to U.S. buyers
+- Foreign exporters did not fully absorb tariff costs
+
+### Steel Purchasing Behavior
+
+Our analysis of steel transaction quantities shows:
+- Substantial increase in steel purchases prior to tariff implementation
+- Slight decline in purchasing after tariffs took effect
+
+### Interpretation
+
+This pattern may indicate:
+- Pre-tariff stockpiling behavior by firms
+- Reduced demand following price increases.
 
 **Existing Federal Reserve research suggests:**
 
@@ -125,14 +190,16 @@ Our project evaluates this mechanism at the industry level using PPI data.
 
 # Data Pipeline
 
-  1. Download yearly **QCEW datasets** (2015–2019)
-  2. Filter for **treatment** and **control** *NAICS* code
-  3. Compute annual **average** employment
-  4. Create **treatment** and **post** indicators
-  5. Log-transform employment
-  6. Merge with tariff exposure indicators
-  7. Estimate *DiD* regression
-  8. Conduct price pass-through analysis
+1. Download yearly QCEW datasets (2015–2019)
+2. Filter for treatment and control NAICS industries
+3. Compute annual average employment
+4. Create treatment and post indicators
+5. Log-transform employment
+6. Estimate Difference-in-Differences regression
+7. Download Producer Price Index (PPI) data for steel
+8. Calculate price changes relative to baseline
+9. Aggregate steel transaction quantities by month
+10. Compare purchasing patterns before and after tariff implementation
 
 
 # Tools & Software
@@ -148,9 +215,19 @@ Our project evaluates this mechanism at the industry level using PPI data.
 
 ```
 .
-├── v-Steel.data/          Code used to analyze Steel price
-├── STEEL_PRICE_rebased/   Datasets containing Steel Prices
-└── README.md              Project overview and documentation
+├── data/
+│   ├── steel_prices/
+│   └── qcew_employment/
+│
+├── figures/
+│   ├── steel_price_trends.png
+│   └── steel_transaction_quantities.png
+│
+├── notebooks/
+│   ├── employment_did_analysis.ipynb
+│   └── steel_transaction_analysis.ipynb
+│
+└── README.md
 ```
 # Limitations
 
@@ -172,7 +249,7 @@ Our project evaluates this mechanism at the industry level using PPI data.
 - Raised consumer prices
 - Produced net welfare gains
 
-is **critical** for evaluating current and future *tariff expansions*
+is **critical** for evaluating the net economic effects of protectionist trade policy.
 
 # References
 
