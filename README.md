@@ -1,6 +1,14 @@
-# Add Graphs, Tables,  and add links to where we got data.
 # Cost–Benefit Analysis of U.S.–China Tariffs (2018–2019)
-Group Members:
+<p align="center">
+  <img src="figures/steel_consumer_cost_plot.png" width="45%" />
+  <img src="figures/steel_transactions_plot.png" width="45%" />
+</p>
+
+> Left: Cost of Steel Purchases
+
+> Right: Quantity of Steel Purchases
+
+## Group Members:
 
 - Melissa Ballesteros
 - Luis Ortiz Velasquez
@@ -155,8 +163,30 @@ $$
 
 This allows us to compare average purchasing levels and identify whether firms adjusted demand following tariff implementation.
 
-# Results (Preliminary)
+# Results
+### Employment Effects
 
+### Price Effects
+![Steel Purchases](figures/steel_consumer_cost_plot.png)
+
+### Steel Purchasing Behavior
+![Steel Transactions](figures/steel_transactions_plot.png) 
+
+Steel Purchase Quantity Table
+| DATE    | QUANTITY |
+|---------|----------|
+| 2015-01 | 202.20   |
+| 2015-07 | 186.40   |
+| 2016-01 | 162.20   |
+| 2016-07 | 169.20   |
+| 2017-01 | 171.50   |
+| 2017-07 | 180.20   |
+| 2018-01 | 178.10   |
+| 2018-07 | 212.00   |
+| 2019-01 | 218.70   |
+| 2019-07 | 202.50   |
+
+# Interpretation
 ### Employment Effects
 - **Estimated employment increase in steel: ~12.5%**
 - **Marginal statistical significance (p ≈ 0.097)**
@@ -166,11 +196,7 @@ This allows us to compare average purchasing levels and identify whether firms a
 - **NOT** strong enough to conclusively attribute gains solely to tariffs
 
 
-
 ### Price Effects
-
-![Steel Purchases](figures/steel_consumer_cost_plot.png)
-
 Steel producer prices increased following tariff implementation.
 
 **Consistent with previous research, our results suggest:**
@@ -178,9 +204,6 @@ Steel producer prices increased following tariff implementation.
 - Foreign exporters did not fully absorb tariff costs
 
 ### Steel Purchasing Behavior
-
-![Steel Transactions](figures/steel_transactions_plot.png) 
-
 **Our analysis of steel transaction quantities shows:**
 - Substantial increase in steel purchases prior to tariff implementation
 - Slight decline in purchasing after tariffs took effect
