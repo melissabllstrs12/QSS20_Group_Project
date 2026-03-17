@@ -178,7 +178,7 @@ This allows us to compare average purchasing levels and identify whether firms a
 ### Difference-in-Differences Regression Results
 | **Variable**         | **Coefficient**   |
 |----------------------|-------------------|
-| Treated $	imes$ Post | 0.1594** (0.0753) |
+| Treated : Post       | 0.1594** (0.0753) |
 | Implied effect (pct) | 17.28             |
 | State FE             | Yes               |
 | Year FE              | Yes               |
