@@ -169,15 +169,17 @@ This allows us to compare average purchasing levels and identify whether firms a
 
 ### Price Effects
 
+![Steel Purchases](figures/steel_consumer_cost_plot.png)
+
 Steel producer prices increased following tariff implementation.
 
 **Consistent with previous research, our results suggest:**
 - Tariff costs were largely passed through to U.S. buyers
 - Foreign exporters did not fully absorb tariff costs
 
-
-
 ### Steel Purchasing Behavior
+
+![Steel Transactions](figures/steel_transactions_plot.png) 
 
 **Our analysis of steel transaction quantities shows:**
 - Substantial increase in steel purchases prior to tariff implementation
@@ -188,7 +190,8 @@ Steel producer prices increased following tariff implementation.
 - Pre-tariff stockpiling behavior by firms
 - Reduced demand following price increases.
 
-**Existing Federal Reserve research suggests:**
+
+### Existing Federal Reserve Research suggests:
 
     a. Tariffs were largely passed through to U.S. prices
 
