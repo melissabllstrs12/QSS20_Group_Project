@@ -274,12 +274,15 @@ Steel producer prices increased following tariff implementation.
 ```
 .
 ├── data/
-│   ├── steel_prices/
-│   └── qcew_employment/
+│   ├── steel_prices/STEEL_PRICE_rebased.csv
+│   └── qcew_employment/steel_employment_annual.csv
 │
 ├── figures/
 │   ├── employment_trends.png
-│   └── steel_transactions_plot.png
+│   ├── full_employment_regression_table.png
+│   ├── steel_consumer_cost_plot.png
+│   ├── steel_transactions_plot.png
+│   └── steel_transactions_table.png
 │
 ├── notebooks/
 │   ├── steel_employment_code.ipynb (Employment Analysis)
