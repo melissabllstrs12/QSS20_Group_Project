@@ -1,4 +1,4 @@
-# Cost–Benefit Analysis of U.S.–China Tariffs (2018–2019)
+# The Effects of U.S.–China Tariffs on Steel Employment and Prices
 <p align="center">
   <img src="figures/steel_consumer_cost_plot.png" width="45%" />
   <img src="figures/steel_transactions_plot.png" width="45%" />
