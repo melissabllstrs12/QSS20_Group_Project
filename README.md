@@ -67,60 +67,13 @@ We focus specifically on industries heavily affected by tariffs — particularly
 - *Producer Price Index (PPI)* data from the Bureau of Labor Statistics.
 > This allows us to test whether tariff-protected industries experienced larger price increases relative to baseline trends.
 
+
 # Methodology (fix this and edit)
 ### Difference-in-Differences (DiD) Framework
 
 **We implement a Difference-in-Differences model comparing:**
 * Treated industry (steel) & Control industry (non-tariff-affected metal manufacturing)
 * Pre-tariff period (2015–2017) & Post-tariff period (2019)
-
-### Price Change Measurement
-
-We calculate the change in steel prices relative to a baseline period using the Producer Price Index (PPI):
-
-\[
-\Delta P_t = P_t - P_{baseline}
-\]
-
-Where:
-
-- \(P_t\) = steel producer price index at time \(t\)
-- \(P_{baseline}\) = baseline steel price index (2015)
-- \(\Delta P_t\) = change in steel prices relative to the baseline period
-
-
-### Steel Transaction Analysis
-
-To analyze purchasing behavior surrounding tariff implementation, we aggregate steel transaction quantities to the monthly level.
-
-\[
-Q_m = \sum_{i=1}^{n_m} q_i
-\]
-
-Where:
-
-- \(Q_m\) = total quantity of steel purchased in month \(m\)  
-- \(q_i\) = quantity purchased in transaction \(i\)  
-- \(n_m\) = number of transactions in month \(m\)
-
-This aggregation produces a time series of steel demand, allowing us to observe whether firms increased purchases prior to tariff implementation (potential stockpiling) and whether demand declined following price increases.
-
-
-### Estimated Cost Impact
-
-To approximate the economic burden of price increases on downstream purchasers, we combine price changes with steel transaction quantities:
-
-\[
-CostImpact_t = \Delta P_t \times Q_t
-\]
-
-Where:
-
-- \(\Delta P_t\) = change in steel price index
-- \(Q_t\) = total steel transaction quantity in period \(t\)
-
-This provides an approximate measure of how higher steel prices translate into increased costs for firms purchasing steel.
-
 * **Regression specification:**
   
 $$
@@ -135,19 +88,72 @@ $$
 $$
 
 **Where:**
-
 - $\beta_3$ captures the causal effect of tariff exposure.
 - $\gamma_i$ represents industry fixed effects.
 - $\delta_t$ represents year fixed effects.
 
-### Price Pass-Through Analysis
-
-**We examine whether industries exposed to tariffs experienced:**
+### Price Change Measurement
 * Statistically significant increases in producer prices
 * Evidence of tariff pass-through
-  
 *This evaluates whether consumers and downstream firms bore the cost of protection.*
 
+We calculate the change in steel prices relative to a baseline period using the Producer Price Index (PPI):
+
+$$
+Price_t =
+\beta_0 + 
+\beta_1 TariffPost_t + 
+\beta_2 Trend_t + 
+\varepsilon_t
+$$
+
+**Where:**
+
+- 𝑡 represents the indexes months
+- $TariffPost_t$ is n indicator for the post-tariff period
+- $\beta_1$ measures the immediate change in steel prices associated with the tariff
+- $\beta_1$ controls for the underlying trend
+
+
+### Monthly Aggregation of Steel Purchases
+To analyze purchasing behavior surrounding tariff implementation, we aggregate steel transaction quantities to the monthly level:
+
+$$
+Q_m = 
+\sum_{i=1}^{n_m} q_i
+$$
+
+**Where:**
+
+- $Q_m$ = total quantity of steel purchased in month \(m\)  
+- $q_i$ = quantity purchased in transaction \(i\)
+- $n_m$ = number of transactions in month \(m\)
+
+This aggregation produces a monthly time series of steel demand, which we use to visualize trends before and after tariff implementation.
+
+
+### Summary Statistics of Steel 
+
+In addition to time-series visualization, we construct a summary table of steel purchasing activity
+
+$$
+Q_{period} =
+\frac{1}{T} 
+\sum_{t=1}^{T} Q_t
+$$
+
+**Where:**
+
+- $Q_{period}$ = average monthly steel purchases within a given period
+- $Q_t$ = total quantity purchased in month 𝑡
+
+- $T$ = number of months in the period
+
+**We compute these statistics separately for:**
+- Pre-tariff period
+- Post-tariff period
+
+This allows us to compare average purchasing levels and identify whether firms adjusted demand following tariff implementation.
 
 # Results (Preliminary)
 
@@ -187,8 +193,6 @@ Steel producer prices increased following tariff implementation.
     a. Tariffs were largely passed through to U.S. prices
 
     b. Foreign exporters did not fully absorb the costs
-
-Our project evaluates this mechanism at the industry level using PPI data.
 
 
 # Data Pipeline
