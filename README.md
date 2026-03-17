@@ -169,10 +169,10 @@ $$
 This allows us to compare average purchasing levels and identify whether firms adjusted demand following tariff implementation.
 
 # Results
-### Employment Effects
+## Employment Effects
 ![Employment Change](figures/employment_trends.png)
 
-## Difference-in-Differences Regression Results
+### Difference-in-Differences Regression Results
 | **Variable**         | **Coefficient**   |
 |----------------------|-------------------|
 | Treated $	imes$ Post | 0.1594** (0.0753) |
@@ -181,20 +181,20 @@ This allows us to compare average purchasing levels and identify whether firms a
 | Year FE              | Yes               |
 | Observations         | 291               |
 
-### Price Effects
+## Price Effects
 ![Steel Purchases](figures/steel_consumer_cost_plot.png)
 
-## Summary of Interrupted Time-Series Regression on Steel Prices
+### Summary of Interrupted Time-Series Regression on Steel Prices
 | **Variable**|**Coefficient**| **p-value**  |
 |-------------|-------------|----------|
 | Intercept   | 102.3       | 0.001    |
 | Post-Tariff | 19.0        | $<$0.001 |
 | Time Trend  | -0.1        | 0.08     |
 
-### Summary Statistics of Steel 
+## Summary Statistics of Steel 
 ![Steel Transactions](figures/steel_transactions_plot.png) 
 
-## Steel Purchase Quantity Table
+### Steel Purchase Quantity Table
 | **DATE**|**QUANTITY**|
 |---------|----------|
 | 2015-01 | 202.20   |
