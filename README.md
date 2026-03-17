@@ -165,6 +165,7 @@ This allows us to compare average purchasing levels and identify whether firms a
 
 # Results
 ### Employment Effects
+![Employment Change Post Tariff](figures/employment_change_post_tariff.png)
 
 ### Price Effects
 ![Steel Purchases](figures/steel_consumer_cost_plot.png)
