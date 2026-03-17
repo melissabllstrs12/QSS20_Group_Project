@@ -214,7 +214,7 @@ This allows us to compare average purchasing levels and identify whether firms a
 # Interpretation
 ### Employment Effects
 - **Estimated employment increase in steel: ~17.28%**
-- **Marginal statistical significance (p ≈ 0.0343)**
+- **Statistical significance (p ≈ 0.0343)**
 
 **Interpretation:**
 - Statistically significant
@@ -293,13 +293,12 @@ Steel producer prices increased following tariff implementation.
 ```
 # Limitations
 
-  **I.** Marginal statistical significance in employment estimates
+  **I.** Limited post-tariff window (COVID-19 prevents clean extension into 2020–2021)
   
-  **II.** Limited post-tariff window (COVID-19 prevents clean extension into 2020–2021)
+  **II.** Potential confounding factors (automation, macroeconomic conditions)
   
-  **III.** Potential confounding factors (automation, macroeconomic conditions)
+  **III.** Small number of industries analyzed
   
-  **IV.** Small number of industries analyzed
 
 # Policy Relevance
 
