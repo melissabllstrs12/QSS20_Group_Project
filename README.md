@@ -263,7 +263,8 @@ Steel producer prices increased following tariff implementation.
 │
 ├── notebooks/
 │   ├── steel_employment_code.ipynb (Employment Analysis)
-│   └── consumer_cost_estimate.ipynb (Price analysis)
+│   ├── consumer_cost_estimate.ipynb (Price analysis)
+│   └── v-Steel.data.py
 │
 └── README.md
 ```
