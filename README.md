@@ -281,7 +281,7 @@ This allows us to compare average purchasing levels and identify whether firms a
 │   ├── steel_transactions_plot.png
 │   └── steel_transactions_table.png
 │
-├── notebooks/
+├── notebooks & code
 │   ├── steel_employment_code.ipynb (Employment Analysis)
 │   ├── consumer_cost_estimate.ipynb (Price analysis)
 │   └── v-Steel.data.py
