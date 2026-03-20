@@ -48,7 +48,7 @@ We focus specifically on industries heavily affected by tariffs — particularly
 * Did industries facing greater tariff exposure experience higher producer prices?   
 
 # Hypothesis
-We hypothesize that the 2018–2019 U.S.–China tariffs generated a decrease in employment within protected industries, particularly the steel sector, by reducing import competition and encouraging domestic production. However, we expect that these employment gains were limited and accompanied by higher consumer prices for steel and steel-related goods. As a result, the broader economic costs to consumers are likely to outweigh the labor market benefits generated within the protected industry.
+We hypothesize that the 2018–2019 U.S.–China tariffs generated an increase in employment within protected industries, particularly the steel sector, by reducing import competition and encouraging domestic production. However, we expect that these employment gains were limited and accompanied by higher consumer prices for steel and steel-related goods. As a result, the broader economic costs to consumers are likely to outweigh the labor market benefits generated within the protected industry.
 
 # Data Sources 
 
